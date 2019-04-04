@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* body 태그와 html태그의 padding과 margin을 0으로 초기화 */
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            font-size:0.8em;
+            text-align: center; /*내용물 가운데정렬*/
+        }
+        .header {
+            margin-bottom: 2em;
+        }
+        #scotty {
+            border-radius: 1em;
+        }
+        .container {
+            background-color: black;
+            color: white;
+        }
+
+        .main-contents {
+            padding: 1em; /* padding은 박스와 그 안에 있는 내용물 사이의 간격이다 */
+            margin: 0 15vw 0 15vw;
+            font-size:0.8em;
+        }
+        
+        .footprint {/* 앞에 .이 붙으면 해당 선택자는 class라는 의미이다  */
+            margin: 0 15vw 0 15vw;
+            padding-bottom: 3em;
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #footer {/* 앞에 #이 붙으면 id라는 의미이다. */
+            border-top: grey solid 1px;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 1em;
+            max-height: 0.5em;
+            font-size: 0.7em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <title>자기소개페이지</title>
+</head>
+<body>
+    <div class="navbar" style="background-color:black;color:white;padding:0.5em"><a>Profile</a> | <a>HelloWorld</a> | <a>Word counter</a> | <a href="http://www.naver.com">네이버</a></div>
+
+    <div class="header" style="text-align:center">
+        <h1>안녕하세요, 제 이름은 이동규 입니다</h1><!--h1,h2..-->
+        <img src="./imgs/내사진.jpg" alt="트레비스스캇" id="scotty" width="200px">
+    </div>
+
+
+    <div class="container">
+        <div class="main-contents">
+            <h2>자기소개</h2>
+            <p>안녕하세요, 반갑습니다. 제 이름은 이동규 라고 합니다. 나이는 92년생으로 올해 스물 여덟입니다. 저는 멋쟁이 사자처럼이 너무 하고싶어서 작년에 지원을 했고 6기에 합격을 했습니다. 1년 동안 열심히 프로그래밍 공부를 했지만 아직 취업을 하기에는 실력이 모자랍니다. 자바스크립트와 리액트를 더 공부하고 싶은데 아르바이트로 하는 카페 일과 멋사 강의 준비하는 것에 치여서 저의 공부를 잘 하지 못하고 있습니다만 곧 멋사 강의도 끝나고(오예) 알바도 하나 그만둘 예정이기 때문에(오예) 조만간 여유가 생겨서 저에게 필요한 개발공부를 할 시간이 점점 생기지 않을까 하는 마음에 들떠서 잠이 오지 않네요. 아주 기분이 좋습니다. 다같이 힘든 시간을 이겨내고 멋진 서비스를 만들어서 뿌듯함과 보람 그리고 재미까지 느끼는 멋쟁이 사자처럼이 되길 바라면서..화이팅!</p>
+            <h2>나의 웹 (혹은 IT) 서비스 아이디어</h2>
+            저는 단국대에 있는 동아리 정보를 정리하고 모집과 탈퇴 그리고 meet-up을 가능하게 하는 형태의 웹 서비스를 생각 해 보았습니다. 자세한 내용은 생략합니다. 물론 7기 여러분들은 자세한 내용을 생략하면 안됩니다.^^. 지원서에 작성해 주셨던 내용을 조금 정리해서 적당한 분량으로 작성해 주시면 될 것 같습니다. (너무 길거나 자세하게 쓰지 않으셔도 됩니다)
+            <br>
+            <p></p>
+        </div>
+    </div>
+
+
+    <div class="footprint">
+        <h2>방명록</h2>
+        <form action="">
+            이름 <input type="text">
+            비밀번호 <input type="password">
+            <br><br>
+            <textarea name="footprint" id="footprint"rows="10"></textarea>
+            <input type="submit" value="제출하기" style="float:right;">
+        </form>
+    </div>
+    <div id="footer" style="text-align:center;">
+        단국대 멋쟁이 사자처럼
+    </div>
+</body>
+</html>
